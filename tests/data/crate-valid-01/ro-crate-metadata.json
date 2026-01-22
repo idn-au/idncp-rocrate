@@ -1,0 +1,63 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.1/context",
+    "https://w3id.org/ro/terms/workflow-run/context",
+    {
+      "myCustomTerm": "https://example.org#myCustomTerm"
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.1"
+      },
+      "about": {
+        "@id": "/"
+      }
+    },
+    {
+      "@id": "/",
+      "@type": "Dataset",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.1"
+      },
+      "datePublished": "2024-05-17T01:04:52+01:00",
+      "description": "A collection of my pictures",
+      "hasPart": {
+        "@id": "dataset-3/"
+      },
+      "isBasedOn": {
+        "@id": "https://doi.org/10.5281/zenodo.1009240"
+      },
+      "license": {
+        "@id": "http://spdx.org/licenses/CC0-1.0"
+      },
+      "mentions": {
+        "@id": "#SepiaConversion_1"
+      },
+      "name": "My Pictures"
+    },
+    {
+      "@id": "dataset-3/",
+      "@type": "Dataset",
+      "datePublished": "2024-05-17T01:04:52+01:00",
+      "description": "A dataset",
+      "license": {
+        "@id": "http://spdx.org/licenses/CC0-1.0"
+      },
+      "name": "Data set 3"
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-9842-9718",
+      "@type": "Person",
+      "name": "Stian Soiland-Reyes"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-3545-944X",
+      "@type": "Person",
+      "name": "Peter Sefton"
+    }
+  ]
+}
